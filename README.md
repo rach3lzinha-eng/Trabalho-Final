@@ -44,3 +44,8 @@ Todos os campos têm `label` associado, os formulários usam tipos HTML adequado
 - Pesquisa e definição do produto: E1 — Pesquisa e definição
 - Ícones: SVG inline desenhados para a interface, sem dependência de biblioteca de ícones.
 - Componente de framework: Bootstrap 5.3, usado somente para demonstrar a classe de alerta do feedback.
+
+## Créditos
+
+Git Hub Pages:  https://rach3lzinha-eng.github.io/Trabalho-Final/
+Git Hub:
