@@ -47,5 +47,5 @@ Todos os campos têm `label` associado, os formulários usam tipos HTML adequado
 
 ## Créditos
 
-Git Hub Pages:  https://rach3lzinha-eng.github.io/Trabalho-Final/
-Git Hub:https://github.com/rach3lzinha-eng/Trabalho-Final
+- Git Hub Pages:  https://rach3lzinha-eng.github.io/Trabalho-Final/
+- Git Hub:https://github.com/rach3lzinha-eng/Trabalho-Final
