@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Painel de agenda e gestão de atendimentos para salão de beleza.">
+  <title>Painel — Agendaê</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Agendaê, página inicial"><span class="brand-mark" aria-hidden="true">a</span><span class="brand-name">agenda<em>ê</em></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle aria-label="Abrir menu"><span aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="menu-principal" data-menu aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" aria-current="page">Painel</a></li>
+          <li><a class="nav-link" href="agenda.html">Agenda</a></li>
+          <li><a class="nav-link" href="atendimentos.html">Atendimentos</a></li>
+          <li><a class="nav-link" href="espera.html">Lista de espera</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar tema claro"><span aria-hidden="true">◐</span><span class="theme-text" data-theme-text>Claro</span></button>
+        <a class="button button--small" href="agenda.html#novo-agendamento">Novo horário</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Quarta, 20 de novembro de 2026</p>
+          <h1 id="titulo-principal">Clareza para cada <span>horário.</span></h1>
+          <p class="lede">A agenda do seu salão em um só lugar — para enxergar a equipe, confirmar o dia e aproveitar cada espaço que aparece.</p>
+          <div class="hero-actions">
+            <a class="button" href="agenda.html">Ver agenda do dia <span aria-hidden="true">→</span></a>
+            <a class="button button--outline" href="espera.html">Abrir lista de espera</a>
+          </div>
+          <div class="hero-note"><div class="avatar-stack" aria-hidden="true"><span>MC</span><span>JS</span><span>LP</span></div><span>Equipe online e agenda sincronizada</span></div>
+        </div>
+        <div class="hero-panel" aria-label="Resumo visual da agenda">
+          <div class="panel-top"><div><small>Visão geral</small><strong>Agenda de hoje</strong></div><span class="panel-status">Ao vivo</span></div>
+          <div class="mini-calendar" aria-label="Semana atual"><span>seg</span><span>ter</span><span>qua</span><span>qui</span><span>sex</span><span>sáb</span><span>dom</span><span>18</span><span>19</span><span class="is-today">20</span><span>21</span><span>22</span><span>23</span><span>24</span></div>
+          <div class="mini-appointment"><time>09:00</time><div><p>Mariana Souza</p><small>Corte + escova · Camila</small></div><span class="status-badge status-badge--confirmed">Confirmado</span></div>
+          <div class="mini-appointment"><time>11:30</time><div><p>Espaço livre</p><small>Manicure · Juliana</small></div><span class="status-badge status-badge--pending">Livre</span></div>
+          <div class="mini-appointment"><time>14:00</time><div><p>Beatriz Lima</p><small>Coloração · Camila</small></div><span class="status-badge status-badge--confirmed">Confirmado</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" aria-labelledby="resumo-titulo">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">O ritmo do dia</p><h2 id="resumo-titulo">Tudo sob controle.</h2></div><p>Atualizado há poucos segundos</p></div>
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-card__top"><span class="metric-card__label">Atendimentos hoje</span><span aria-hidden="true">✦</span></div><strong class="metric-card__value">18</strong><span class="metric-card__change">+3 contra ontem</span></article>
+          <article class="metric-card"><div class="metric-card__top"><span class="metric-card__label">Horários livres</span><span aria-hidden="true">◌</span></div><strong class="metric-card__value">06</strong><span class="metric-card__change metric-card__change--neutral">Em 3 profissionais</span></article>
+          <article class="metric-card"><div class="metric-card__top"><span class="metric-card__label">Confirmações</span><span aria-hidden="true">✓</span></div><strong class="metric-card__value">83%</strong><span class="metric-card__change">+12% esta semana</span></article>
+          <article class="metric-card"><div class="metric-card__top"><span class="metric-card__label">Na espera</span><span aria-hidden="true">♡</span></div><strong class="metric-card__value">04</strong><span class="metric-card__change metric-card__change--neutral">Prontas para encaixe</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" aria-labelledby="agenda-resumo">
+      <div class="container dashboard-grid">
+        <article class="surface-card">
+          <div class="surface-card__header"><h2 id="agenda-resumo">Agenda por profissional</h2><a class="button button--quiet" href="agenda.html">Abrir agenda</a></div>
+          <div class="surface-card__body">
+            <div class="schedule-preview" aria-label="Resumo de horários da equipe">
+              <div></div><div class="schedule-preview__head">Camila · cabelo</div><div class="schedule-preview__head">Juliana · unhas</div><div class="schedule-preview__head">Lívia · estética</div>
+              <div class="schedule-preview__time">09:00</div><div class="schedule-block schedule-block--busy"><strong>Mariana</strong><small>Corte + escova</small></div><div class="schedule-block schedule-block--free"><strong>Disponível</strong><small>Toque para agendar</small></div><div class="schedule-block schedule-block--busy"><strong>Carla</strong><small>Limpeza de pele</small></div>
+              <div class="schedule-preview__time">11:30</div><div class="schedule-block schedule-block--free"><strong>Disponível</strong><small>Toque para agendar</small></div><div class="schedule-block schedule-block--busy"><strong>Fernanda</strong><small>Manicure</small></div><div class="schedule-block schedule-block--free"><strong>Disponível</strong><small>Toque para agendar</small></div>
+              <div class="schedule-preview__time">14:00</div><div class="schedule-block schedule-block--busy"><strong>Beatriz</strong><small>Coloração</small></div><div class="schedule-block schedule-block--blocked"><strong>Intervalo</strong><small>Almoço</small></div><div class="schedule-block schedule-block--busy"><strong>Joana</strong><small>Drenagem</small></div>
+            </div>
+          </div>
+        </article>
+        <article class="surface-card wait-summary">
+          <div class="surface-card__header"><h2>Lista de espera</h2><span class="status-badge status-badge--pending">04 clientes</span></div>
+          <div class="surface-card__body wait-summary"><p class="eyebrow">Próximo encaixe</p><strong class="wait-summary__number">11:30</strong><ul class="wait-summary__list"><li><strong>Renata Alves</strong><span>Manicure</span></li><li><strong>Paula Reis</strong><span>Corte</span></li><li><strong>Luana Dias</strong><span>Coloração</span></li></ul><a class="button button--outline" href="espera.html">Gerenciar lista <span aria-hidden="true">→</span></a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>Agendaê · mais clareza para cuidar de cada cliente.</p><div class="footer-links"><a href="agenda.html">Agenda</a><a href="atendimentos.html">Atendimentos</a><a href="espera.html">Lista de espera</a></div></div></footer>
+  <div class="live-region" data-live-region aria-live="polite"></div>
+</body>
+</html>
